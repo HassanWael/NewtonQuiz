@@ -5,6 +5,9 @@
 	<title>Courses</title>
 	<link rel="stylesheet" type="text/css" href="../css/choice.css" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		<link  rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 	<link
 		href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
 		rel="stylesheet" />
@@ -14,50 +17,84 @@
 </head>
 
 <body>
-	<!-----------------------------choice quis start------------------------------>
-	<div class="choice">
-		<div class="title">
-			<h2>
-				"Welcome <span class="user-N"> Ahmed</span> the exam page"<img class="imgLable"
-					src="../img/img-removebg-preview.png" alt="" />
-			</h2>
-		</div>
-	
-		<!-- start card  -->
-		<div class="box">
-			<div class="card">
-				<i class="fa fa-rocket" aria-hidden="true"></i>
-				<h3 class="question">English</h3>
-				<p>
-					If you want to learn english, go
-					<a class="link" href="https://www.duolingo.com/" target="blank">here</a>.
-				</p>
-				<a class="button" href="../pages/computerHtml.html" onclick="goto('english')">Start quiz</a>
-			</div>
-			<div class="card">
-				<i class="fab fa-css3" aria-hidden="true"></i>
-				<h3 class="question">Css</h3>
-				<p>
-					If you want to learn Css, go
-					<a class="link" href="https://www.w3schools.com/" target="blank">here</a>.
-				</p>
-				<a class="button" href="../pages/computerHtml.html"  onclick="goto('css')">Start quiz</a>
-			</div>
-			<div class="card">
-				<i class="fas fa-tv"></i>
-				<h3 class="question">Computer</h3>
 
-				<p>
-					If you want to learn computer, go
-					<a class="link" href="https://videolectures.net/mit_world/" target="blank">here</a>.
-				</p>
-				<a class="button" href="../pages/computerHtml.html"  onclick="goto('computer')">Start quiz</a>
+
+	<nav class="navbar">
+		<div class="logo">
+			<a href="../index.html">
+				<img id="logo" src="../img/logo.png" alt="" width="90" height="70">
+			</a>
+		</div>
+	</nav>
+	<div class="container margin">
+		<div class="row ">
+			<div class=" bg_board col-lg-8 col-md-12" style="background-image: url(../img/board.jpeg);" >
+			
+				<span class="mySlides ">
+					Hello, <br>
+					Do you want to take a shart quiz in Computer history <br><br>
+					Quiz Instructions :
+					<ol>
+						<li>The quiz has 5 Questions </li>
+						<li>You have 5min to finish the whole quiz </li>
+						<li>The estimated time for the quiz is 1:30min</li>
+						<li>Good luck! </li>
+					</ol>
+					<a href="../pages/computerHtml.html" onclick="goto('computer')">
+						<button class="button">Take the quiz</button>
+					</a>
+				</span>
+				
+				<!--          ------------------------------- -------------------------------------------- -->
+				<span class="mySlides">
+					Hello, <br>
+					Do you want to take a shart quiz in English <br><br>
+					Quiz Instructions :
+					<ol>
+						<li>The quiz has 5 Questions </li>
+						<li>You have 5min to finish the whole quiz </li>
+						<li>The estimated time for the quiz is 1:30min</li>
+						<li>Good luck! </li>
+					</ol>
+					<a href="../pages/computerHtml.html" onclick="goto('computer')">
+						<button class="button">Take the quiz</button>
+					</a>
+				</span>
+			
+				<!--          ------------------------------- -------------------------------------------- -->
+				<span class="mySlides">
+					Hello, <br>
+					Do you want to take a shart quiz in CSS <br><br>
+					Quiz Instructions :
+					<ol>
+						<li>The quiz has 5 Questions </li>
+						<li>You have 5min to finish the whole quiz </li>
+						<li>The estimated time for the quiz is 1:30min</li>
+						<li>Good luck! </li>
+					</ol>
+					<a href="../pages/computerHtml.html" onclick="goto('computer')">
+						<button class="button">Take the quiz</button>
+					</a>
+				</span>
+				<button class="btnNext"  onclick="carousel()"><img src="../img/arrow.png" width="44px" height="40px"/></button>
+			
+				<!--          ------------------------------- -------------------------------------------- -->
+
+
+			</div>
+		
+			<div class="col-lg-4 col-md-12 welcomeRow">
+				<span class="welcomeText">Welcome  <span id="name">Ahmad</span>  </span>
 			</div>
 		</div>
+
 	</div>
-	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+		crossorigin="anonymous"></script>
 	<!-----------------------choice quis end------------------------------>
 	<script src="../js/choice.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
 </body>
 
 </html>

@@ -5,57 +5,180 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Quiz online</title>
     <link rel="stylesheet" href="./css/style.css">
     <!-- <link rel="stylesheet" href="../Homepage/particles.js-master/demo/css/style.css"> -->
 </head>
 
-<body>
+<body >
+
     <div id="particles-js"> </div>
     <nav class="navbar ">
-        <div class="container-fluid margin_Container">
-            <a class="navbar-brand" href="#">
-                <img src="img/logo.png" alt="" width="90" height="70">
+        <div class="container margin_Container">
+            <a class="mx-auto" href="#">
+                <img id="logo" src="img/logo.png" alt="" width="90" height="70">
             </a>
-            <a>
-                <div>
+        </div>
+    </nav>
+            <!-- <div>
                  <button class="btn  LogButton">
             <a href="./pages/Login.html" > <span>Log in </span> </a> 
             </button>
             <button class="btn  LogButton">
                 <a href="./pages/sighnUp.html" > <span>Sign up</span> </a> 
                 </button>
+            </div> -->
+
+  
+    <div class="container d-flex  mainContainer " data-aos="fade-left">
+        <div class="row d-flex ">
+            <div class="col-lg-6 col-md-12 d-flex flex-column textColorBlue">
+                <h1>Best Online Quiz Platform</h1>
+                <p >Hey there!! Welcome to our online quiz website, Here we offer you a hight quality quizes that you can
+                    take and learn from it
+                    We have Computer quizes in addition of English Tests and we will add much more in the future stay
+                    tuned!.
+                </p>
+                <a href="./pages/sighnUp.html" class="buttonDiv">
+                    <button id="buttonStarted"><span>Let's Get Started</span></button>
+                </a>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="row">
+                    <img src="img/3684.png"alt="nothing" width="90%" height="90%">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="quizDiv">Why our Website </div>
+                </div>
+              
+                <div class="row imgs">
+                    <div class="col-md-3 imgDiv" >
+                        <img src="img/english1.png" class="theImg" alt="english" >
+                        <p class="textCards">You can take the quiz as many times as you want – a great way to practice!</p>
+                    </div>
+                    <div class="col-md-3 imgDiv" >
+                        <img src="img/english2.png"  class="theImg" alt="english" >
+                        <p class="textCards">The quiz is completely free! No credit card details required.</p>
+                    </div>
+                    <div class="col-md-3 imgDiv" >
+                        <img src="img/english3.png" class="theImg"  alt="english">
+                        <p class="textCards">Flexible and convenient, our English quizzes work on any device.</p>
+                    </div>
+                    <div class="col-md-3 imgDiv"    >
+                        <img src="img/english4.png" class="theImg"  alt="english">
+                        <p class="textCards">Share your results on social media or by email. Invite your friends and see who scores the
+                            best.</p>
+                    </div>
+
+                </div>
+                <div class="row" style="margin-top: 20px;">
+                    <div class="col-md-12">
+                        <h4 >English Quiz </h4>
+
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-12">
+                   <h5 class="textCenters">There are many benefits to knowing English </h5>
+                </div>      
+
+                </div>
+
+                <div class="row" data-aos="fade-right">
+                    <div class="col-lg-6 col-md-12 bg-wheate" >
+                        <ol id="list">
+                            <li> It can further your career, help you find a good
+                                job</li>
+                            <li>  improve your skills for academic excellence</li>
+                            <li>you are testing
+                            your knowlege of the language and can asses your strengths and weakness</li>
+                            <li> pIts growing popularity makes it an
+                                essential skill for new opportunities worldwide. By taking an English quiz</li>
+                        </ol>
+                         
+                    </div>
+                    <div class="col-lg-6 col-md-12 imgEng" >
+                        <img src="img/englishQuiz.png" alt="english quiz pic" width="90%"/>
+                    </div>
+                           
+                 </div>
+      
+                <div class="row mar">
+                    <div class="col-md-12">
+                        <h5>CSS Quiz</h5>
+                    </div>
+                </div>
+                <div class="row" data-aos="flip-right">
+                    <div class="col-md-6  bg-wheateCss">
+                        <p>The Quiz contains 5 questions and you have 5min to solve them. </p>
+                    
+                    </div>
+                    <div class="col-md-6 bg-wheateCss">
+                        <p> You can retake the quiz as much as you want</p>
+                    </div>
+                </div>
+                <div class="row"data-aos="flip-right">
+                    <div class="col-md-12 bg-wheateCss"><p>You can view your and Answers and the correct answer at the end of the quiz</p>
+                    
+                    <img src="img/quizCss.png" alt="css quiz pic " />
+                    </div>
+                </div>
+                <div class="row mar"data-aos="flip-right">
+                    <h5>Computer Quizzes & Trivia </h5>
+                    <div class="col-lg-6 col-md-12 bg-wheateCS">
+                     
+                        <p>
+                            Are you looking for computer general knowledge questions to prepare for competitive exams?
+                            Learn new facts and trivia about computers with these amazing online computer quizzes. Test
+                            yourself and share these computer quizzes to find out who the real tech-wizard is! The quiz
+                            questions are well-researched to help you learn everything right from programming languages,
+                            to microprocessors, hacking and more.</p>
+                            
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <img src="img/computerQuiz.jpg" alt="computer quiz pic" width="100%"/>
+                    </div>
+                </div>
+
+
+
+
             </div>
 
-        </div>
-    </nav>
-    <div class="container d-flex  mainContainer">
-        <div class="row d-flex ">
-        <div class="col-lg-6 col-md-12 d-flex flex-column textColorBlue">
-            <h1 >Best Online Quiz Platform</h1>
-            <p>Hey there!! Welcome to our online quiz website, Here we offer you a hight quality quizes that you can take and learn from it 
-                We have Computer quizes in addition of English Tests and we will add much more in the future stay tuned!.
-            </p>y
-            <a href="./pages/sighnUp.html">
-                <button id="buttonStarted"><span>Let's Get Started</span></button>  
-            </a>
-        </div>
-        <div class="col-lg-6 col-md-12">
-        <div class="row">
-          <img src="img/3684.png" alt="nothing" width="90%" height="90%">
-        </div>
-        </div>
-    </div>
-    </div>
-  
     <script src="js/particles.js-master/particles.js"></script>
     <script src="js/particles.js-master/demo/js/app.js"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    <footer class="footer">
+        <script>
+            AOS.init();
+          </script>
+        <div class="container-fluid ">
+            <div class="row d-flex justify-content-around">
+                <span class="col-sm-4 footerChild"><a href="pages/Login.html"><button class="btn btn-primary">Login</button></a></span>
+                <span class="col-sm-4 footerChild">  <a class="mx-auto footerChild" href="#logo">
+                    <img src="img/logo.png" albt="" width="90" height="70">
+                </a></span>
+                <span class="col-sm-4 footerChild"> <a href="pages/sighnUp.html"><button class="btn btn-primary">Register</button></a></span>
+            </div>
+        </div>
+        
+      </footer>
 </body>
 
 </html>
